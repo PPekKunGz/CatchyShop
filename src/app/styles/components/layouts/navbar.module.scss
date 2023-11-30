@@ -1,0 +1,70 @@
+.container {
+  color: black;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+.top_background {
+  background-image: url("https://www.aphmeow.com/holiday/holiday_desktop_header.png");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  z-index: -1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    filter: blur(10px);
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    p {
+      color: white;
+      font-size: 30px;
+      text-shadow: 4px 3px 0px #e990ff, 7px 1px 0px rgba(3, 3, 3, 0.466);
+    }
+  }
+}
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 42px;
+    background: #773dbd;
+    span {
+        color: white;
+        &:hover {
+            color: #e990ff;
+        }
+    }
+}
+.navbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+    li {
+       color: #773dbd;
+       &:hover {
+        color: #ff8ddc ;
+       } 
+    }
+}
