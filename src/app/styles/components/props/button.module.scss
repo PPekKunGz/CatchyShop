@@ -1,0 +1,21 @@
+.Btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.text {
+	text-transform: uppercase;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #773dbd;
+	color: white;
+	font-weight: 700;
+	height: 40px;
+	width: 150px;
+	box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+	&:hover {
+		cursor: pointer;
+	}
+}

@@ -1,5 +1,7 @@
+'use client'
 import Link from "next/link";
 import nav from "../../styles/components/layouts/navbar.module.scss";
+import Countdown from '../../components/CountdownTimer'
 
 export default function Navbar() {
   return (
@@ -11,8 +13,9 @@ export default function Navbar() {
         </div>
       </div>
       <div className={nav.news}>
-        <span>อัพเดทข่าวสาร 00:00:00</span>
-        <span>เซอร์ไพรส์พิเศษ 00:00:00</span>
+         <span>ALICESSHOP, EESHOP, CATCHYSHOP</span>
+         {/* <Countdown /> */}
+        
       </div>
       <ul className={nav.navbar}>
         <li>

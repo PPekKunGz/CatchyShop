@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
+  --swiper-navigation-color: white;
+  --swiper-navigation-size: 20px !important;
 }
+.swiper-pagination-bullet {
+  display: none !important;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,14 +19,13 @@
   -moz-user-select: none;
   user-select: none;
   /* font-family: 'Heebo', sans-serif; */
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  /* font-family: "LINE Seed Sans TH App", sans-serif; */
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
-  overflow: hidden;
   scroll-behavior: smooth;
 }
 
@@ -34,27 +40,61 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: white;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+
+  span {
+    margin: 0 0.5em;
   }
 }
 
 @font-face {
-  font-family: 'LineTH_Bold';
-  src: url(/fonts/LINESeedSansTH_W_Bd.woff);
+  font-family: 'LINE Seed Sans TH';
+  src: url(https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/LINESeedSansTH/LINESeedSansTH-Thin.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: 'LineTH_Heavy';
-  src: url(/fonts/LINESeedSansTH_W_He.woff);
+  font-family: 'LINE Seed Sans TH';
+  src: url(https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/LINESeedSansTH/LINESeedSansTH-Regular.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: 'LineTH_Regular';
-  src: url(/fonts/LINESeedSansTH_W_Rg.woff);
+  font-family: 'LINE Seed Sans TH';
+  src: url(https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/LINESeedSansTH/LINESeedSansTH-Bold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: 'LineTH_Thin';
-  src: url(/fonts/LINESeedSansTH_W_Th.woff);
+  font-family: 'LINE Seed Sans TH';
+  src: url(https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/LINESeedSansTH/LINESeedSansTH-ExtraBold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: 'LineTH_ExtraBold';
-  src: url(/fonts/LINESeedSansTH_W_Xbd.woff);
+  font-family: 'LINE Seed Sans TH';
+  src: url(https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/LINESeedSansTH/LINESeedSansTH-Black.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
 }
