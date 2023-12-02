@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <div className={footer.copyright}>
-        Copyright &copy; PPekKunGzDev &amp; Br6wnDev, All Rights Reserved.
+        Copyright &copy; PPekKunGzDev &amp; DimensionStudio, All Rights Reserved.
       </div>
     </>
   );

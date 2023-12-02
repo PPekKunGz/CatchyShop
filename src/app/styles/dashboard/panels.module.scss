@@ -1,0 +1,43 @@
+.hr_mid {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  text-align: center;
+  height: 3em;
+  opacity: 1;
+  &:before {
+    content: "";
+    margin-top: 10px;
+    background: #fff;
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    width: calc(100% - 200px);
+    height: 3px;
+  }
+  &:after {
+    content: attr(data-content);
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 0 0.5em;
+    line-height: 1.5em;
+    color: #fff;
+    background-color: #242424;
+    font-size: 30px;
+  }
+}
+.background {
+  height: 100vh;
+  background: #242424;
+}
+.container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
