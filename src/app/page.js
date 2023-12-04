@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./styles/page.module.scss";
-import data from "../../data/shop-all.json";
+import data1 from "../../data/shop-keyring.json";
+import data2 from "../../data/shop-anyting.json";
 import Button from "./components/props/Button";
 import Slider from "./components/Slider";
 
@@ -10,7 +11,7 @@ export const metadata = {
 };
 
 export default async function Home() {
-  const shopall = data;
+  const shopall = [...data1, ...data2];
   await new Promise((resolve) => setTimeout(resolve, 3000));
   return (
     <>

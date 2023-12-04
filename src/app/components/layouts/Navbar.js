@@ -22,10 +22,10 @@ export default function Navbar() {
           <Link href="/">หน้าหลัก</Link>
         </li>
         <li>
-          <Link href="/shop-all">สินค้าทั้งหมด</Link>
+          <Link href="/shops/all">สินค้าทั้งหมด</Link>
         </li>
         <li>
-          <Link href="/shop-keyring">พวงกุญแจ</Link>
+          <Link href="/shops/keyring">พวงกุญแจ</Link>
         </li>
         <li>
           <Link href="/contact">ติดต่อ</Link>

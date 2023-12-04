@@ -1,10 +1,10 @@
 import Image from "next/image";
-import styles from "../styles/page.module.scss";
-import data from "../../../data/shop-all.json";
-import Button from "../components/props/Button";
+import styles from "../../styles/page.module.scss";
+import data from "../../../../data/shop-keyring.json";
+import Button from "../../components/props/Button";
 
 export const metadata = {
-  title: "สินค้าทั้งหมด | CatchyShop",
+  title: "พวงกุญแจ | CatchyShop",
   description: "CatchyShop",
 };
 
@@ -14,7 +14,7 @@ export default async function Home() {
   return (
     <>
       <div className={styles.background}>
-        <hr className={styles.hr_mid} data-content="สินค้าทั้งหมด" />
+        <hr className={styles.hr_mid} data-content="พวงกุญแจ" />
         <div className={styles.container}>
           {shopall.map((data, index) => (
             <div key={index}>
