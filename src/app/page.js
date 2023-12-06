@@ -4,6 +4,7 @@ import data1 from "../../data/shop-keyring.json";
 import data2 from "../../data/shop-anyting.json";
 import Button from "./components/props/Button";
 import Slider from "./components/Slider";
+import NewShop from "./components/NewShop";
 
 export const metadata = {
   title: "หน้าหลัก | CatchyShop",
@@ -16,6 +17,7 @@ export default async function Home() {
   return (
     <>
       <Slider />
+      <NewShop /> {/* NEW SHOP */}
       <div className={styles.background}>
         <hr className={styles.hr_mid} data-content="สินค้าของทางร้าน" />
         <div className={styles.container}>
