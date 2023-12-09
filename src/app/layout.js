@@ -5,6 +5,7 @@ import './styles/globals.css'
 export const metadata = {
   title: 'CatchyShop',
   description: 'CatchyShop',
+  
 }
 
 export default function RootLayout({ children }) {
@@ -13,7 +14,6 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   )

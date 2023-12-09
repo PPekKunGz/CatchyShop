@@ -5,6 +5,7 @@ import data2 from "../../data/shop-anyting.json";
 import Button from "./components/props/Button";
 import Slider from "./components/Slider";
 import NewShop from "./components/NewShop";
+import Footer from "./components/layouts/Footer";
 
 export const metadata = {
   title: "หน้าหลัก | CatchyShop",
@@ -41,6 +42,7 @@ export default async function Home() {
             </div>
           ))}
         </div>
+        <Footer/>
       </div>
     </>
   );

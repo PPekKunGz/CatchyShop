@@ -3,6 +3,7 @@ import styles from "../../styles/page.module.scss";
 import data1 from "../../../../data/shop-keyring.json";
 import data2 from "../../../../data/shop-anyting.json";
 import Button from "../../components/props/Button";
+import Footer from "@/app/components/layouts/Footer";
 
 export const metadata = {
   title: "สินค้าทั้งหมด | CatchyShop",
@@ -36,6 +37,7 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <Footer/>
       </div>
     </>
   );

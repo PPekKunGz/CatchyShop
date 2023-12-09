@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../../styles/page.module.scss";
 import data from "../../../../data/shop-keyring.json";
 import Button from "../../components/props/Button";
+import Footer from "@/app/components/layouts/Footer";
 
 export const metadata = {
   title: "พวงกุญแจ | CatchyShop",
@@ -36,6 +37,7 @@ export default async function Home() {
             </div>
           ))}
         </div>
+        <Footer/>
       </div>
     </>
   );

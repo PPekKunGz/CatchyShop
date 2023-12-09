@@ -15,6 +15,7 @@ import {
   Database,
   Server,
 } from "lucide-react";
+import Footer from "../components/layouts/Footer";
 const Contact = () => {
   const [user, setUser] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
