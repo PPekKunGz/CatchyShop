@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/page.module.scss";
 import Button from "../components/props/Button";
 import data from "../../../data/news-shop.json";
+import Soldout from "./props/Soldout";
 
 export default function NewShop(){
     const shopall = data;
@@ -24,7 +25,7 @@ export default function NewShop(){
                   <a href={data.url} target="_blank" rel="noreferrer">
                     {/* <Button text={"asdasd" + data.price}/> */}
                     {/* <Button text={`${data.price} BAHT`} /> */}
-                    {data.qty <= 0 ? (<Button text="SOLD OUT"/>):(<Button text={`${data.price} BAHT`} />)}
+                    {data.qty <= 0 ? (<Soldout text="SOLD OUT"/>):(<Button text={`${data.price} BAHT`} />)}
                   </a>
                 </div>
               </div>
